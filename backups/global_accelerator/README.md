@@ -1,0 +1,9 @@
+To Create Global Accelerator On us-east-1 Region
+
+-> terraform init
+-> terraform plan -var="tsceksalbdomainarnuseast1=<provide alb arn created post eks deployment>" -var="tsceksalbdomainarnuswest1=<provide alb arn created post eks deployment>"
+   example: terraform plan -var="tsceksalbdomainarnuseast1=arn:aws:elasticloadbalancing:us-east-1:137740421094:loadbalancer/app/08939fc8-2048game-2048ingr-6fa0/753ed7858aaf84e8" -var="tsceksalbdomainarnuswest1=arn:aws:elasticloadbalancing:us-west-1:137740421094:loadbalancer/app/08939fc8-2048game-2048ingr-6fa0/753ed7858aaf84e8"
+-> terraform apply -var="tsceksalbdomainarnuseast1=<provide alb arn created post eks deployment>" -var="tsceksalbdomainarnuswest1=<provide alb arn created post eks deployment>" --auto-approve
+   example: terraform apply -var="tsceksalbdomainarnuseast1=arn:aws:elasticloadbalancing:us-east-1:137740421094:loadbalancer/app/08939fc8-2048game-2048ingr-6fa0/753ed7858aaf84e8" -var="tsceksalbdomainarnuswest1=arn:aws:elasticloadbalancing:us-west-1:137740421094:loadbalancer/app/08939fc8-2048game-2048ingr-6fa0/753ed7858aaf84e8" --auto-approve
+-> terraform destroy -var="tsceksalbdomainarnuseast1=<provide alb arn created post eks deployment>" -var="tsceksalbdomainarnuswest1=<provide alb arn created post eks deployment>" --auto-approve
+   example: terraform destroy -var="tsceksalbdomainarnuseast1=arn:aws:elasticloadbalancing:us-east-1:137740421094:loadbalancer/app/08939fc8-2048game-2048ingr-6fa0/753ed7858aaf84e8" -var="tsceksalbdomainarnuswest1=arn:aws:elasticloadbalancing:us-west-1:137740421094:loadbalancer/app/08939fc8-2048game-2048ingr-6fa0/753ed7858aaf84e8" --auto-approve

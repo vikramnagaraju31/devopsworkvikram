@@ -1,0 +1,8 @@
+infraname = "sandbox"
+region = "us-west-1"
+stage = "prod"
+zone = "advipenguins.click"
+domain = "tscglobal.advipenguins.click"
+subdomain = "tscglobal"
+failoverroutingpolicy = "SECONDARY"
+setidentifier = "Secondary"
